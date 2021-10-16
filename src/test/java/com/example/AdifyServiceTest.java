@@ -17,6 +17,12 @@ class AdifyServiceTest {
   }
 
   @Test
+  @Tag("fast")
+  void testA() {
+    assertEquals("a", "a");
+  }
+
+  @Test
   @Tag("slow")
   void foo() {
     SenderSpy spy = new SenderSpy();
