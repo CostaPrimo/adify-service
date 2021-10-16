@@ -56,7 +56,7 @@ class Service {
   }
 
   private static Channel getChannel() throws URISyntaxException, NoSuchAlgorithmException, KeyManagementException, IOException, TimeoutException {
-    String uri = System.getenv("CLOUDAMQP_URL");
+    String uri = System.getenv("amqps://rqwdgtgy:btIH9JmSAsQSaVed8eRW9MKg0IQRapNw@crow.rmq.cloudamqp.com/rqwdgtgy");
     if (uri == null) {
       uri = "amqp://guest:guest@localhost";
     }
