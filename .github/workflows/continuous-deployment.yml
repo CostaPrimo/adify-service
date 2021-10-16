@@ -17,7 +17,7 @@ jobs:
           heroku_email: "jeppeenevold@gmail.com"
       - name: Test
         run: |
-          mvn test -DskipTests=false -Dgroups=fast
+          mvn test -DskipTests=false -Dgroups=slow
           git checkout ${GITHUB_REF#refs/heads/}
           git rebase origin/master
           git branch release
